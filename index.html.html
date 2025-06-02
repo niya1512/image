@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html{
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        
+        }
+        .container
+        {
+            position:relative;
+            width: 100%;
+            height: 100vh;
+            background-image: url("lovebird.jpg");
+        background-size: 1500px;
+    background-repeat: no-repeat;
+}
+        .falling-image {
+            position: absolute;
+            top: -100px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: fallAnimation 3s forwards;
+            animation-delay: 2s;
+ }
+ @keyframes fallAnimation{
+    0%{
+        top: -100px;
+    }
+    50%{
+        top: 50px;
+    }
+    100%{
+        top: 50px;
+    }
+ }
+ h2{
+    font-size: 35px;
+    text-shadow: 3px -5px 7px red;
+ }
+ #content{
+    position: relative;
+    top: 150px;
+}
+p{
+    font-size: 25px;
+    text-align: justify;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <img class="falling-image" src="lovebird.jpg.jpg" alt="Falling Image">-->
+        <h2 class="falling-image">Web Development</h2>
+        <div id="content">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, veritatis corrupti. Aut odio temporibus odit sapiente repellat porro expedita, iure hic consequuntur magni maxime harum ea beatae voluptatibus, autem mollitia?</p>
+        </div>
+    </div>
+</body>
+</html>
